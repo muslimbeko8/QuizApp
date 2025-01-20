@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  position: relative;
+  z-index: 1;
+}
+body::after{
+  content: "";
+  opacity: .1;
+  background: #000 url("/bg.jpg") no-repeat 100% 100% / cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
