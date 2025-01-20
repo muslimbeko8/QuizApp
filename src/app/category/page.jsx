@@ -1,16 +1,15 @@
-import { useParams, useSearchParams } from 'next/navigation'
-import React from 'react'
+"use client";
+import {
+  useParams,
+  useSearchParams,
+} from "next/navigation";
+import React from "react";
 
 const CategoryPage = () => {
-  const {id} = useParams()
-  const sParams = useSearchParams()
-  
-  return (
-    <div>
-      
-      {id || ""}
-    </div>
-  )
-}
+  const { id } = useParams();
+  const sParams = useSearchParams();
 
-export default CategoryPage
+  return <div>{id || ""}</div>;
+};
+
+export default CategoryPage;
