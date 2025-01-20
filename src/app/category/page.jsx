@@ -1,13 +1,10 @@
 "use client";
-import {
-  useParams,
-  useSearchParams,
-} from "next/navigation";
+import { useParams } from "next/navigation";
 import React from "react";
 
 const CategoryPage = () => {
   const { id } = useParams();
-  const sParams = useSearchParams();
+  // const sParams = useSearchParams();
 
   return <div>{id || ""}</div>;
 };
